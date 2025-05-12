@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Layout Plugin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>  
+    <div class="container">
+        <h2>Настройки текста</h2>
+
+        <!-- Максимальная ширина текста -->
+        <label for="maxWidth">Макс. ширина (px):</label>
+        <input type="number" id="maxWidth" value="800">
+
+        <!-- Чекбокс для подложки -->
+        <div class="form-group inline">
+            <label for="enableBackground">Добавлять подложку</label>
+            <input type="checkbox" id="enableBackground" checked>
+        </div>
+
+        <!-- Настройки подложки -->
+        <div id="backgroundSettings">
+            <div class="form-group inline">
+                <div class="half">
+                    <label for="paddingX">Отступ по X:</label>
+                    <input type="number" id="paddingX" value="20" min="0" />
+                </div>
+                <div class="half">
+                    <label for="paddingY">Отступ по Y:</label>
+                    <input type="number" id="paddingY" value="20" min="0" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="bgColor">Цвет подложки:</label>
+                <input type="color" id="bgColor" value="#000000">
+            </div>
+
+            <div class="form-group">
+                <label for="bgOpacity">Прозрачность:</label>
+                <input type="range" id="bgOpacity" min="0" max="100" value="50">
+                <span id="opacityValue">50%</span>
+            </div>
+        </div>
+
+        <!-- Настройки шрифта -->
+        <div class="form-group">
+            <label for="fontFamily">Шрифт:</label>
+            <select id="fontFamily"></select>
+        </div>
+        <div class="form-group">
+            <label for="fontStyle">Начертание:</label>
+            <select id="fontStyle"></select>
+        </div>
+
+        <!-- Кнопка -->
+        <button id="applyBtn">Применить</button>
+    </div>
+
+    <script src="js/CSInterface.js"></script>
+    <script src="js/bridge.js"></script> 
+    <script src="js/main.js"></script>
+</body>
+</html>
