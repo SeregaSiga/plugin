@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Вызываем функцию, чтобы заполнить выпадающие списки шрифтов
-    fetchAndPopulateFonts();
+  
 
     // ---------- [ Применение настроек ] ----------
 
@@ -85,3 +85,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+  fetchAndPopulateFonts();
